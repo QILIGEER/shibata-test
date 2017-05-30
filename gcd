@@ -1,0 +1,13 @@
+#!bin/bash
+#ssss
+echo 'please num a and b:';
+read a b;
+c=$((a%b))
+while [ ${c} -ne 0 ]
+do
+gys=${c}
+a=${b}
+b=${c}
+c=$((a%b))
+done;
+echo 'sssss:' ${gys};
